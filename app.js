@@ -17,10 +17,18 @@ function run() {
     result.contentWindow.eval(localStorage.js_code);
 }
 function changeLanguage(n) {
-    if(n === 1){
+    if(n === 'css'){
         html_button.classList.add('code-element')
         css_button.classList.remove('code-element')
-
+        js_button.classList.add('code-element')
+    } else if( n === 'js'){
+        html_button.classList.add('code-element')
+        css_button.classList.add('code-element')
+        js_button.classList.remove('code-element')
+    } else if( n === 'html'){
+        html_button.classList.remove('code-element')
+        css_button.classList.add('code-element')
+        js_button.classList.add('code-element')
     }
 
 }
