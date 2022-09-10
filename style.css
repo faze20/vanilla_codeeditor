@@ -15,7 +15,6 @@ body {
     height: 100vh;
     font-family: sans-serif;
     background-image: linear-gradient(45deg,var(--light-blue), var(--blue));
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +41,9 @@ body {
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
 }
+/* .code-element:nth-child(2){
+    display: none;
+} */
 
 h1 {
     font: 600 1.2rem sans-serif;
@@ -90,3 +92,29 @@ a {
     float: right;
     cursor: pointer;
 }
+.selector{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .code-editor {
+        display: flex;
+        flex-direction: column;
+    }
+    .code-element{
+        display: none;
+    }
+    .language{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .selector{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .selector button{
+        padding: 0.4rem;
+    }
+  }

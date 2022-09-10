@@ -2,6 +2,9 @@ const html_code = document.querySelector('.html-code textarea');
 const css_code = document.querySelector('.css-code textarea');
 const js_code = document.querySelector('.js-code textarea');
 const result = document.querySelector('#result');
+const html_button = document.querySelector('.html-code')
+const css_button = document.querySelector('.css-code')
+const js_button = document.querySelector('.js-code')
 
 function run() {
     // Storing data in Local Storage
@@ -13,7 +16,14 @@ function run() {
     result.contentDocument.body.innerHTML = `<style>${localStorage.css_code}</style>` + localStorage.html_code;
     result.contentWindow.eval(localStorage.js_code);
 }
+function changeLanguage(n) {
+    if(n === 1){
+        html_button.classList.add('code-element')
+        css_button.classList.remove('code-element')
 
+    }
+
+}
 // Checking if user is typing anything in input field
 html_code.onkeyup = () => run();
 css_code.onkeyup = () => run();
