@@ -10,27 +10,40 @@
 </head>
 
 <body>
-    <div class="selector">
-        <button onclick="changeLanguage(1)">Html</button>
-        <button onclick="changeLanguage(2)">CSS</button>
-        <button onclick="changeLanguage(3)">JS</button>
-    </div>
-    <div class="code-editor">
-        <div class="code">
-            <div class="html-code ">
-                <h1><img src="images/html.png" alt="">HTML</h1>
-                <textarea></textarea>
-            </div>
-            <div class="css-code code-element">
-                <h1><img src="images/CSS.png" alt="">CSS</h1>
-                <textarea></textarea>
-            </div>
-            <div class="js-code code-element">
-                <h1><img src="images/js.png" alt="">JS</h1>
-                <textarea spellcheck="false"></textarea>
-            </div>
+    <div class="nav">
+        <div>
+            <ul class="nav_ul">
+                <li><a href="./flappybird/index.html">Flappy bird</a> </li>
+                <li>Tetris</li>
+                <li>Tic Tac Toe</li>
+                <li>Cross word</li>
+            </ul>
         </div>
-        <iframe id="result"></iframe>
+    </div>
+    <div class="body_editor">
+        <div class="selector">
+            <button onclick="changeLanguage(1)">Html</button>
+            <button onclick="changeLanguage(2)">CSS</button>
+            <button onclick="changeLanguage(3)">JS</button>
+        </div>
+        <div class="code-editor">
+            <div class="code">
+                <div class="html-code ">
+                    <h1><img src="images/html.png" alt="">HTML</h1>
+                    <textarea></textarea>
+                </div>
+                <div class="css-code code-element">
+                    <h1><img src="images/CSS.png" alt="">CSS</h1>
+                    <textarea></textarea>
+                </div>
+                <div class="js-code code-element">
+                    <h1><img src="images/js.png" alt="">JS</h1>
+                    <textarea spellcheck="false"></textarea>
+                </div>
+            </div>
+            <iframe id="result"></iframe>
+        </div>
+
     </div>
 
     <script src="app.js"></script>

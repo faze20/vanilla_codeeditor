@@ -10,8 +10,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+.body_editor {
     height: 100vh;
     font-family: sans-serif;
     background-image: linear-gradient(45deg,var(--light-blue), var(--blue));
@@ -41,9 +45,6 @@ body {
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
 }
-/* .code-element:nth-child(2){
-    display: none;
-} */
 
 h1 {
     font: 600 1.2rem sans-serif;
