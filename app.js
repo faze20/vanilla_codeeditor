@@ -17,7 +17,7 @@ function run() {
     result.contentWindow.eval(localStorage.js_code);
 }
 function changeLanguage(n) {
-    if(n === 1){
+    if(n === 'css'){
         html_button.classList.add('code-element')
         css_button.classList.remove('code-element')
     }

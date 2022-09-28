@@ -104,18 +104,19 @@ a {
     .code-element{
         display: none;
     }
-    .language{
-        display: none;
-    }
-    .active{
-        display: block;
+    .code textarea {
+        height: 100%;
     }
     .selector{
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin: 0.7rem 0.3rem;
     }
     .selector button{
         padding: 0.4rem;
+    }
+    .code{
+        border-radius: 0;
     }
   }
