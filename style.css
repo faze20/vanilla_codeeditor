@@ -10,6 +10,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    padding-top: 2rem;
+}
 .nav_ul{
     display: flex;
     justify-content: space-between;
@@ -27,23 +30,21 @@
 .code-editor {
     width: 90vw;
     height: 90vh;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #fff;
     border-radius: 1rem;
     overflow: hidden;
-    border: 1px solid var(--dark-blue);
+    margin: auto;
 }
 
 .code {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    overflow-y: auto;
-
     background-color: var(--dark-blue);
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
+    margin-right: 1rem;
 }
 
 h1 {
@@ -82,6 +83,18 @@ h1 > img {
     height: 100%;
     border: none;
 }
+.display-result{
+    border: 1px solid var(--dark-blue);
+    border-radius: 2rem;
+
+}
+.display-heading{
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
 
 a {
     background-color: lime;
@@ -118,5 +131,12 @@ a {
     }
     .code{
         border-radius: 0;
+        margin: 0;
+        height: 30vh;
+    }
+    .display-result{
+    height: 100vh;
+    border: none;
+    margin-top: 2rem;
     }
   }

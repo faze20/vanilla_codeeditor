@@ -21,6 +21,16 @@ function changeLanguage(n) {
         html_button.classList.add('code-element')
         css_button.classList.remove('code-element')
     }
+    if(n === 'js'){
+        html_button.classList.add('code-element')
+        css_button.classList.add('code-element')
+        js_button.classList.remove('code-element')
+    }
+    if(n === 'html'){
+        js_button.classList.add('code-element')
+        css_button.classList.add('code-element')
+        html_button.classList.remove('code-element')
+    }
 }
 // Checking if user is typing anything in input field
 html_code.onkeyup = () => run();
